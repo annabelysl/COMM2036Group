@@ -1,0 +1,258 @@
+body { 
+    margin: 2%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #929292;
+
+}
+.nav_header{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding: 15px;
+    background: #ffffff;
+}
+
+
+h2 { 
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 5%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    font-size: 40px;
+}
+
+.nav_header a { 
+    background: #ffffff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    text-decoration: none;
+    font-size: 24px;
+    border: 50px;
+} 
+.nav_header a:hover {
+    background-color: #ddd;
+    color: black;
+} 
+
+.nav_header a.active{
+    background-color: #7cd1ff;
+  color: white;
+} 
+
+.hero-image { 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/Screen\ Shot\ 2022-11-30\ at\ 12.39.37.png");
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.fakenewsimage { 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/Screen\ Shot\ 2022-11-30\ at\ 13.35.40.png");
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.disinfoimage { 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/Screen\ Shot\ 2022-11-30\ at\ 15.23.12.png");
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.misinfoimage { 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/Screen\ Shot\ 2022-11-30\ at\ 16.15.06.png");
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.hero-text {
+    text-align: center;
+    color: #ddd;
+    padding: 10%;
+    font-size: 30px;
+  }
+
+.nav_bar { 
+    display: block;
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    border: none;
+  outline: none;
+  position: relative;
+  top: 0%;
+}
+
+.nav_bar a { 
+ display: block;
+ background: #ffffff;
+text-align: center;
+padding: 20px;
+height: auto;
+text-decoration: none;
+font-size: 20px;
+cursor: pointer;
+}
+
+.nav_bar a:hover { 
+    background-color: #ddd;
+    color: black;
+}
+
+  /* Create two columns/boxes that floats next to each other */
+main
+{
+    display: grid; 
+    background: #ffffff;
+    /*grid-template-columns: 10% 90%;*/ 
+    grid-template-columns: 1fr 9fr; 
+    grid-gap:0px;
+}
+
+article.homepage
+{
+    display: grid; 
+    text-align: center;
+    padding-top: 0%;
+    grid-template-columns: 5fr 5fr; 
+    grid: gap 2px;
+}
+  
+article.overview
+{
+    display: grid; 
+    text-align: center;
+    background-color: white;
+    margin: 0%;
+    grid-template-columns: 5fr 5fr; 
+    grid-gap:0px;
+}
+article {
+    background-color: rgba(225, 212, 212, 0.59);
+    display: grid;
+    grid-template-columns: 2fr 8fr; 
+    margin-left: 0%;
+    padding: 20px;
+    border: 0ch;
+    grid-gap: 15px;
+}
+
+article.tesla
+{
+    display: grid; 
+    text-align: center;
+    padding-top: 3%;
+    grid-template-columns: 5fr 5fr; 
+    grid-gap: 4px;
+}
+
+.tesla {
+    padding: 5%;
+    display: block;
+}
+
+.pic:hover
+{transform: translate(-40px, +40px);}
+
+h1
+{
+    margin:auto;
+}
+
+.container, .fakenewsoverview {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    width: 100%;
+    size: 100%;
+    height: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #4ed3ff;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 80%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    height: 100%;
+    width: 100%;
+  }
+  .fakenewsoverview:hover .overlay {
+    height: 100%;
+    width: 100%;
+  }
+  .text {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 100%;
+    font-style: bold;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .button {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+  .container {
+    position: relative;
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+  }
+  
+  .container .content {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; /* Grey text */
+    width: 800px; 
+    padding: 20px;
+  }
+
+  .zoom {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(244, 244, 244, 0.812);
+    transition: transform .2s; /* Animation */
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }

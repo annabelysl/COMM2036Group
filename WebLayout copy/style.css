@@ -1,0 +1,227 @@
+body { 
+    margin: 2%;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:rgba(147, 143, 143, 0.55);
+}
+.nav_header{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    background: #ffffff;
+    padding: 15px;
+}
+
+h2 { 
+    text-align: center;
+    background-color: rgba(147, 143, 143, 0.55);
+    padding: 2%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    font-size: 40px;
+}
+.nav_header a { 
+    background: #ffffff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    text-decoration: none;
+    font-size: 24px;
+    border: 50px;
+} 
+.nav_header a:hover {
+    background-color: #ddd;
+    color: black;
+} 
+
+.nav_header a.active{
+    background-color: #7cd1ff;
+  color: white;
+} 
+
+.hero-image { 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/Background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.hero-text {
+    text-align: center;
+    color: #ddd;
+    padding-top: 25%;
+    padding-bottom: 20%;
+    font-size: 30px;
+  }
+.why { 
+
+
+}
+.nav_bar { 
+    display: block;
+    background: #c36d6d;
+    width: 100%;
+    height: 100%;
+    border: none;
+  outline: none;
+  position: relative;
+  top: 0%;
+}
+
+.nav_bar a { 
+ display: block;
+ background: #c36d6d;
+text-align: center;
+padding: 20px;
+height: auto;
+text-decoration: none;
+font-size: 20px;
+cursor: pointer;
+}
+
+.nav_bar a:hover { 
+    background-color: #ddd;
+    color: black;
+}
+
+  /* Create two columns/boxes that floats next to each other */
+main
+{
+    display: grid; 
+    background: #c36d6d;
+    /*grid-template-columns: 10% 90%;*/ 
+    grid-template-columns: 1fr 9fr; 
+    grid-gap:0px;
+}
+
+article.homepage
+{
+  padding: 1%;
+    display: grid; 
+    text-align: center;
+    background: #ffffff;
+    grid-template-columns: 5fr 5fr; 
+    grid: gap 30%;;
+}
+
+.zoom {
+  padding: 0px;
+  text-align: center;
+  background-color: rgba(244, 244, 244, 0.812);
+  transition: transform .2s; /* Animation */
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+article.overview
+{
+    display: grid; 
+    text-align: center;
+    background-color: white;
+    margin: 0%;
+    grid-template-columns: 5fr 5fr; 
+    grid-gap:0px;
+}
+article {
+    background-color: rgb(217, 220, 175);
+    display: grid;
+    grid-template-columns: 2fr 8fr; 
+    margin-left: 0%;
+    padding: 20px;
+    border: 0ch;
+    grid-gap: 15px;
+   /** border: 15px solid green;
+    padding: 100px;
+    margin: 30px*/
+}
+.homepage {
+    background-color: antiquewhite;
+    padding: 5%;
+    display: block;
+
+}
+
+.pic:hover
+{transform: translate(40px, +40px);}
+
+h1
+{
+    margin:auto;
+}
+
+.container, .fakenewsoverview {
+    position: relative;
+    width: 100%;
+    background-color: inherit;
+  }
+  
+  .image {
+    width: 100%;
+    size: 100%;
+    height: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #4ed3ff;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 80%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    height: 100%;
+    width: 100%;
+  }
+  .fakenewsoverview:hover .overlay {
+    height: 100%;
+    width: 100%;
+  }
+  .text {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 100%;
+    font-style: bold;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .solution {
+    padding-top: 25%;
+    margin: 0%;
+    background-color: inherit;
+    text-align: center;
+  }
+
+  .button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    background-color: rgb(133, 213, 204);
+    background-repeat: repeat;
+  }
+ 
+  .footer { 
+    margin:2%; 
+    
+  }
